@@ -1,0 +1,104 @@
+<!--Pretendo inserir muito javascript nessa pagina para que a ficha tenha funcionalidades que não considgo fazer com html-->
+<!--também é necessário um trabalho na estruturação do formulário para que ele fique mais visualmente agradável-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem</title>
+    <link rel="stylesheet" href="../projeto.css">
+</head>
+<body>
+    <header>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="raças.html">Raças</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="ficha.html">Ficha</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="ficha_personagem">
+            <h1>Ficha do Personagem</h1>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="1" required>
+                <label for="raca">Raça:</label>
+                <select name="raca" id="raca" required>
+                    <option value="">Selecione a raça</option>
+                    <option value="anão_da_montanha">Anão da montanha</option>
+                    <option value="anão_da_planície">Anão da planície</option>
+                    <option value="alto_elfo">Alto elfo</option>
+                    <option value="elfo_da_floresta">Elfo da floresta</option>
+                    <option value="gnomo_arcano">Gnomo arcano</option>
+                    <option value="gnomo_urbano">Gnomo urbano</option>
+                    <option value="humano">Humano</option>
+                    <option value="orc_da_planície">Orc da planície</option>
+                    <option value="orc_de_sangue">Orc de sangue</option>
+                </select>
+                <label for="classe">Classe:</label>
+                <select name="classe" id="classe" required>
+                    <option value="">Selecione a classe</option>
+                    <option value="barbaro">Bárbaro</option>
+                    <option value="bruxo">Bruxo</option>
+                    <option value="guerreiro">Guerreiro</option>
+                    <option value="ladino">Ladino</option>
+                    <option value="mago">Mago</option>
+                    <option value="monge">Monge</option>
+                    <option value="patrulheiro">Patrulheiro</option>
+                    <option value="paladino">Paladino</option>
+                    <option value="sacerdote">Sacerdote</option>
+                    <option value="xama">Xamã</option>
+                </select>
+                <br>
+                <label for="vida">HP:</label>
+                <input type="number" id="vida" name="vida" required>
+                <label for="energia">MP:</label>
+                <input type="number" id="energia" name="energia" required>
+                <label for="classe de armadura">CA:</label>
+                <input type="number" id="classe de armadura" name="classe de armadura" required>
+                <br>
+                <label for="foto">Foto do Personagem:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <label for="historia">História do Personagem:</label>
+                <textarea id="historia" name="historia" rows="10" cols="50" required></textarea>
+                <br>
+                <label for="forca">Força:</label>
+                <input type="number" id="forca" name="forca" min="-4" max="10" required>
+                <label for="destreza">Destreza:</label>
+                <input type="number" id="destreza" name="destreza" min="-4" max="10" required>
+                <label for="constituicao">Constituição:</label>
+                <input type="number" id="constituicao" name="constituicao" min="-4" max="10" required>
+                <label for="inteligencia">Inteligência:</label>
+                <input type="number" id="inteligencia" name="inteligencia" min="-4" max="10" required>
+                <label for="sabedoria">Sabedoria:</label>
+                <input type="number" id="sabedoria" name="sabedoria" min="-4" max="10" required>
+                <label for="carisma">Carisma:</label>
+                <input type="number" id="carisma" name="carisma" min="-4" max="10" required>
+                <br>
+                <label for="habilidades">Habilidades:</label>
+                <textarea id="habilidades" name="habilidades" rows="10" cols="100" placeholder="Descreva as habilidades do seu personagem aqui..."></textarea>
+                <br>
+                <label for="inventário">Inventário:</label>
+                <textarea id="inventário" name="inventário" rows="10" cols="100" placeholder="Preencha com seus itens..."></textarea>
+                <br>    
+                <button type="submit">Salvar Ficha</button>
+            </form>
+        </section>
+    </main>
+<hr>
+<footer>
+    <p>2024 RPG Sistema Adaptado</p>
+    <p>Feito por diversão, para diverção</p>
+    <p>Curso de HTML e CSS</p>
+    <p>Brasil</p>
+</footer>
+    
+</body>
+</html>

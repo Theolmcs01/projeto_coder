@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="../projeto.css">
+</head>
+<body>
+    <header>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="raças.html">Raças</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="ficha.html">Ficha</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <nav class="classes-nav">
+            <ul>
+                <li><a href="#barbaro">Bárbaro</a></li>
+                <li><a href="#bruxo">Bruxo</a></li>
+                <li><a href="#guerreiro">Guerreiro</a></li>
+                <li><a href="#ladino">Ladino</a></li>
+                <li><a href="#mago">Mago</a></li>
+                <li><a href="#monge">Monge</a></li>
+                <li><a href="#paladino">Paladino</a></li>
+                <li><a href="#patrulheiro">Patrulheiro</a></li>
+                <li><a href="#sacerdote">Sacerdote</a></li>
+                <li><a href="#xama">Xamã</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="barbaro">
+            <h2>Bárbaro</h2>
+            <p class="descricao_classe">
+                Classe bruta de combate corpo a corpo.
+                <br>
+                HP: 12 / 1d10+mCON Por nível
+                RP: 20
+                <br>
+                Bônus: +2 FOR/ +1 CON
+                Armadura: leve
+                CA: 11 + Armadura + modCON + Bônus do escudo
+            </p>
+
+            <p class="habilidade_classe">
+                Fúria Bárbara: O recurso primário do bárbaro é a fúria. O bárbaro possui 0 de fúria 
+                por padrão, e a preenche conforme: 2 pontos a cada ataque acertado, 2 pontos a cada 
+                ataque recebido. Quando os pontos de fúria estão no máximo, ganha o efeito Imparável: 
+                Não pode ser afetado por efeitos que afetam sabedoria/inteligência. 
+            </p>
+        </section>
+
+        <section id="bruxo">
+            <h2>Bruxo</h2>
+            <p class="descricao_classe">
+                Classe mágica com poderosas magias das trevas, podendo brincar com a vida.
+                <br>
+                HP: 6 / 1d4+mCON Por nível
+                MP: 1d8+mINT / 1d6+mINT Por nível
+                <br>
+                Bônus: +1 SAB / +2 INT
+                Armadura: Roupas
+                CA: 10 + mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Conversão de Vida: O bruxo pode escolher conjurar suas magias usando pontos de vida 
+                ao invés de pontos de mana. Quando o fizer, qualquer acerto com magia das trevas 
+                (sujeito a julgamento do mestre) tem 50% de chances de gerar um ponto de vitalidade, 
+                que fica armazenado pelo resto do combate e o bruxo pode escolher usar para recuperar 
+                seus pontos de vida.
+            </p>
+        </section>
+
+        <section id="guerreiro">
+            <h2>Guerreiro</h2>
+            <p class="descricao_classe">
+                É uma classe de combate de linha de frente, bem resistente.
+                <br>
+                HP: 10 / 1d8+mCON Por nível
+                EP: 1d6+mFOR / 1d6+mFOR Por nível
+                <br>
+                Bônus: +1 FOR / + 2 CON
+                Armadura: leve/média/pesada
+                CA: 10 + Armadura + mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Treinamento de guerra: escolha uma das seguintes como sua perícia de classe.
+
+                Espadachim: ao usar espadas de duas mãos ou uma dupla empunhadura de espadas 
+                de uma mão, testes de acerto têm +2 de bônus em acerto e adiciona +1 em sua CA.
+
+                Destruidor: Armas de duas mãos muito pesadas concedem +2 de bônus de dano. 
+                O destruidor dará mais dano conforme o tamanho de seu inimigo. 
+                Grande: 1d4, Gigante: 2d4, Colossal: 3d4.
+                
+                Duelista: Ao defender-se de um ataque, tem 25% de chance de ganhar um ataque de oportunidade.
+
+                Mestre do escudo: escudos concedem 2 de CA a mais. O mestre do escudo também 
+                pode provocar um inimigo por 2 turnos.
+            </p>
+        </section>
+
+        <section id="ladino">
+            <h2>Ladino</h2>
+            <p class="descricao_classe">
+                Classe de combate furtivo, capaz de causar grande dano, mas pouco resistente
+                <br>
+                HP: 8 / 1d6+mCON Por nível
+                EP: 1d4+mDES / 1d4+mDES Por nível
+                <br>
+                Bônus: +1 FOR / +2 DES
+                Armadura: leve
+                CA: 10 + Armadura + mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Finalizar: Quando seu ataque deixa um inimigo com 20 % da vida máxima ou é 
+                declarado contra um inimigo com menos de 20%, dobra os dados de ataque.
+            </p>
+        </section>
+
+        <section id="mago">
+            <h2>Mago</h2>
+            <p class="descricao_classe">
+                Classe de combate mágico a distância, capaz de desferir forte dano em área
+                <br>
+                HP: 6 / 1d4+mCON Por nível
+                MP: 1d12+mINT / 1d8+mINT Por nível
+                <br>
+                Bônus: +1 SAB / +2 INT
+                Armadura: Roupas
+                CA: 10 + mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Mestre da magia: Escolhe um tipo de magia (fogo, gelo, radiante, necrótico, natureza e etc.) 
+                para se especializar. Quando utiliza uma magia da sua especialidade, tem +2 de acerto e tem 
+                50% de chance de recuperar 2 de mana.
+            </p>
+        </section>
+
+        <section id="monge">
+            <h2>Monge</h2>
+            <p class="descricao_classe">
+                Classe ágil de combate corpo a corpo. Capaz de desferir golpes rápidos e poderosos
+                <br>
+                HP: 8 / 1d6+mCON Por nível
+                KI: 20
+                <br>
+                Bônus: +2 DES/ +1 SAB
+                Armadura: Roupas
+                CA: 12 + mSAB
+            </p>
+            
+            <p class="habilidade_classe">
+                Ki: O recurso primário do monge é o Ki. O monge começa com 10 de Ki, sempre que 
+                receber dano, o monge perde 2 de Ki. O monge recupera 2 de Ki sempre que desviar 
+                ou acertar um ataque. Ao atingir o máximo de pontos de Ki o monge entra em estado 
+                de Nirvana, durante o qual o monge recebe +2 de CA.
+            </p>
+        </section>
+
+        <section id="paladino">
+            <h2>Paladino</h2>
+            <p class="descricao_classe">
+                Classe de combate semelhante ao guerreiro com poderes divinos de dano e suporte
+                <br>
+                HP: 10 / 1d8+mCON Por nível
+                MP: 1d6+mSAB / 1d4+mSAB Por nível
+                <br>
+                Bônus: +1 SAB / +2 CON
+                Armadura: leve/média/pesada 
+                CA: 10 + Armadura + mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Receptáculo da luz: Sempre que o paladino utilizar uma magia sagrada ou atacar 
+                com energia sagrada, ele recebe +SAB pontos de vida temporários.
+            </p>
+        </section>
+
+        <section id="patrulheiro">
+            <h2>Patrulheiro</h2>
+            <p class="descricao_classe">
+                Classe de combate à distância, capaz de desferir tiros poderosos e precisos de 
+                distância segura ou Assassinar seu inimigo enquanto em sua volta.
+                <br>
+                HP: 8 / 1d6+mCON Por nível
+                EP: 1d4+mDES / 1d4+mDES Por nível
+                <br>
+                Bônus: +2 DES / +1 INT
+                Armadura: leve/média
+                CA: 10 + Armadura + mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Companheiro animal: tem facilidade em lidar com animais, tendo uma proficiência 
+                extra ao lidar com animais selvagens (+2 em testes que envolvem adestrar animais, 
+                reconhecer pegadas, e etc.), também pode tentar domesticar alguns animais para 
+                segui-lo, apenas um animal pode ser adestrado. 
+            </p>
+        </section>
+
+        <section id="sacerdote">
+            <h2>Sacerdote</h2>
+            <p class="descricao_classe">
+                Classe de suporte com alta capacidade de cura.
+                <br>
+                HP: 6 / 1d4+mCON Por nível
+                MP: 1d12+mSAB / 1d8+mSAB Por nível
+                <br>
+                Bônus: +3 SAB
+                Armadura: Roupas
+                CA: 10 + mCON + Bônus de escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Milagre da luz: O sacerdote pode, 1 vez por descanso longo, recuperar 100% da vida 
+                de um indivíduo utilizando seu poder sagrado, independentemente da vida deste 
+                (não funciona em criaturas fracas contra dano radiante).
+            </p>
+        </section>
+
+        <section id="xama">
+            <h2>Xamã</h2>
+            <p class="descricao_classe">
+                Classe mágica menos vulnerável nascida de rituais e capaz de controlar os elementos
+                <br>
+                HP: 10 / 1d6+mCON Por nível
+                MP: 1d8+mINT / 1d6+mINT Por nível
+                <br>
+                Bônus: +1 CON / +2 INT
+                Armadura: Roupas/leve/média
+                CA: 10 + armadura+ mCON + Bônus do escudo
+            </p>
+            
+            <p class="habilidade_classe">
+                Manipulação Elementar: As magias do Xamã são  afetadas pelo ambiente ao seu redor. 
+                Dependendo das características das redondezas ele pode receber um benefício de acordo 
+                com o elemento predominante:
+
+                Robustez da terra: Magias de buffs defensivos conferem um escudo 
+                adicional que acrescenta +1 de CA a todos os aliados afetados.
+
+                Fluidez da água: Sempre que o xamã utilizar uma magia, ele tem 50% de 
+                chance de recuperar metade da mana gasta.
+
+                Benção dos ventos: Magias lançadas pelo xamã tem +2 de acerto e projéteis 
+                e magias lançadas contra o xamã tem -2 de acerto.
+
+                Impacto do fogo: Magias ofensivas infringem +2 de dano.
+
+            </p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>2024 RPG Sistema Próprio</p>
+        <p>Feito por diversão, para diverção</p>
+        <p>Curso de HTML e CSS</p>
+        <p>Brasil</p>
+    </footer>
+    
+</body>
+</html>

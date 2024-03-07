@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../projeto.css">
+</head>
+<body>
+    <header>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="raças.html">Raças</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="ficha.html">Ficha</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="mecanicas_gerais">
+        <p>
+            Atributos: Os atributos são componentes essenciais no RPG que ajudam a quantificar 
+            a habilidade dos personagens, eles sçao divididos em 6, sendo eles: força, destreza,
+            constituição, inteligência, sabedoria e carisma. São importantes tanto dentro quanto 
+            fora do combate, pois até mesmo em interações sociais ou com o ambiente os atributos 
+            são levados em conta.<br>
+            Modificadores: Valores derivados dos atributos que afetam diretamente os resultados 
+            das ações do personagem. Esses valores serão adicionados ou subtraídos em rolagens de dado 
+            ou testes de habilidade para determinar o sucesso ou fracasso dos personagens.<br>
+            Mais a frente veremos como selecionar seus atributos e modificadores.
+        </p>
+        <p>
+            Classe de armadura: A Classe de Armadura determina o número que seu oponente deve rolar 
+            nos dados em uma rolagem de acerto para te atingir. Cada classe possui uma forma de 
+            determinar a classe de armadura.
+        <br>
+            As armaduras são diferenciadas por tipo: roupas, leve, média, pesada. E cada tipo 
+            adiciona um valor à CA do personagem, indo de +0 até +3 seguindo a ordem crescente 
+            iniciada por roupas (+0) e terminada com armadura pesada (+3)
+        </p>
+        <p>
+            Queda e Morte: Ao alcançar 0 pontos de vida, o indivíduo está caído, ele deve realizar 
+            5 testes de resistência à morte, esse teste tem dificuldade 10 e não leva bônus de 
+            atributo algum. Em caso de 3 falhas, o indivíduo está morto. Em caso de 3 sucessos, o 
+        </p>
+        <p>
+            Reação: Todo ser tem uma reação por turno. Como o nome sugere, esse tipo de ação sempre 
+            é uma reação a algo que acontece, e não pode ser ativada por vontade própria do indivíduo.
+        </p>
+        <p>
+            Condições: Estas serão condições de referência para basear condições específicas de cada 
+            magia e habliidade que o jogador e o mestre venham a criar:
+        </p>
+        <ul>
+            <li>Prostrado: Acertos contra o alvo são rolados com vantagem. 
+            Para levantar-se, o alvo não poderá se mover.</li>
+
+            <li>Atordoado: Acertos contra o alvo são rolados com vantagem. 
+            O alvo não pode realizar ações ou movimentos no próximo turno.</li>
+            
+            <li>Amedrontado: O alvo não pode atacar, e em seu próximo turno deve 
+            gastar todas as suas ações para fugir do amedrontador.</li>
+        </ul>
+        <p>
+            Tamanhos: colocaremos algumas criaturas para servir de parâmetro ou exemplo do tamanho indicado.
+        <p>
+        <ol>
+            <li>Minúsculo: esqulio,rato,sapo.</li>
+            <li>Pequeno: Cachorro,Kobold,Gnomo.</li>
+            <li>Normal: Gnol,Anão,Cabra.</li>
+            <li>Grande: Cavalo,Ogro,Urso-Coruja.</li>
+            <li>Gigante: Mamute,Dragão Adulto,Ciclope.</li>
+            <li>Colossal: Zaratan,Tarrasque, Dragão ancião.</li>
+        </ol>
+        </section>
+        <section id="mecanicas_combate">
+            <p>
+                Modificadores de Acerto e dano: O acerto padrão de armas físicas é calculado da forma 
+                (1d20 + modDES), o dano é calculado da seguinte maneira (1dx + modFOR). Já o acerto de 
+                cada magia deve ser descrito na própria habilidade.
+            </p>
+            <P>
+                Empate no teste: Em combate, a defesa sempre ganha. Uma rolagem de ataque que iguala 
+                a classe de armadura é uma falha, enquanto testes de resistência e de dificuldade se 
+                tornam sucessos.
+            </P>
+            <p>
+                Armas nas duas mãos: Os acertos são rolados individualmente, e o dano do segundo ataque 
+                não levará bônus de dano.
+            </p>
+            <p>
+                Ataque de oportunidade: Caso um oponente se afaste do indivíduo se afaste sem desengajar, 
+                o indivíduo pode realizar um ataque de oportunidade como reação>
+            </p>
+            <p>
+                Ataque surpresa: Ataque que surpreende um inimigo fora de combate. Rola o dado de acerto 
+                com vantagem.
+            </p>
+        </section>
+
+        <section id="atributos">
+            <p>
+                Para criar seu personagem você precisará escolher seus atributos da maneira que 
+                lhe for conveniente. Muita atenção pois essa é uma das partes mais essenciais 
+                da criação de personagem.
+            </p>
+            <p>
+                Os atributos serão feitos da seguinte maneira:
+            </p>
+            <ol>
+                <li>Seu personagem tem por padrão atributos iniciais de valor -4 (modificador -2).</li>
+                <li>Adicione os bonus da raça e da classe nos atributos.</li>
+                <li>Distribua 40 pontos de acordo com a tabela a seguir.</li>
+                <li>Um atributo não pode ultrapassar o valor 7 no nivel 1 do personagem.</li>
+        
+            </ol>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Custo</th>
+                        <th>Mod</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-3</td>
+                        <td>1</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>1</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>-1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 RPG Sistema Adaptado</p>
+        <p>Feito por diversão, para diverção</p>
+        <p>Curso de HTML e CSS</p>
+        <p>Brasil</p>
+    </footer>
+</body>
+</html>
