@@ -20,8 +20,7 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <main>
+    <main class="ficha-main">
         <section id="ficha_personagem">
             <h1>Ficha do Personagem</h1>
             <form action="#" method="post">
@@ -65,7 +64,8 @@
                 <input type="number" id="classe de armadura" name="classe de armadura" required>
                 <br>
                 <label for="foto">Foto do Personagem:</label>
-                <input type="file" id="foto" name="foto" accept="image/*">
+                <img id="imagemSelecionada" src="#" alt="Imagem Selecionada" />
+                <input type="file" id="inputImagem" onchange="exibirImagemSelecionada(event)" accept="image/*">
                 <label for="historia">História do Personagem:</label>
                 <textarea id="historia" name="historia" rows="10" cols="50" required></textarea>
                 <br>
@@ -92,13 +92,27 @@
             </form>
         </section>
     </main>
-<hr>
+
 <footer>
     <p>2024 RPG Sistema Adaptado</p>
-    <p>Feito por diversão, para diverção</p>
+    <p>Feito por diversão, para diversão</p>
     <p>Curso de HTML e CSS</p>
     <p>Brasil</p>
 </footer>
     
+<script>
+    function exibirImagemSelecionada(event) {
+        const imagemSelecionada = document.getElementById('imagemSelecionada');
+        const arquivoSelecionado = event.target.files[0];
+
+        if (arquivoSelecionado) {
+            const leitor = new FileReader();
+            leitor.onload = function(e) {
+                imagemSelecionada.src = e.target.result;
+            }
+            leitor.readAsDataURL(arquivoSelecionado);
+        }
+    }
+</script>
 </body>
 </html>
