@@ -18,9 +18,12 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <main>
-        <section id="mecanicas_gerais">
+    <main class="regras-main" id="regras-main">
+        <div id="buscador">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button onclick="search()">Buscar</button>
+        </div>
+        <section id="mecanicas-gerais">
         <p>
             Atributos: Os atributos são componentes essenciais no RPG que ajudam a quantificar 
             a habilidade dos personagens, eles sçao divididos em 6, sendo eles: força, destreza,
@@ -32,8 +35,22 @@
             ou testes de habilidade para determinar o sucesso ou fracasso dos personagens.<br>
             Mais a frente veremos como selecionar seus atributos e modificadores.
         </p>
+
         <p>
-            Classe de armadura: A Classe de Armadura determina o número que seu oponente deve rolar 
+            Vida: Também chamado de HP. Representam a quantidade de dano que seu personagem pode receber
+            Cada classe tem uma quantidade específica de HP no nível 1 e conforme a escalada de nível, 
+            acrescenta um valor que varia de classe em classe.
+        </p>
+
+        <p>
+            Energia: Também chamado de MP. São pontos que serão usados para utilizar as habilidades dos personagens. 
+            Cada classe não somente tem uma quantidade específica assim como o HP, como algumas classes tem um sistema 
+            diferente ou utilizam uma nomenclatura diferente, mas tem a mesma função de ser uma quantificação da capacidade 
+            de utilizar habilidades.
+        </p>
+
+        <p>
+            Classe de armadura: Referenciada como CA. A Classe de Armadura determina o número que seu oponente deve rolar 
             nos dados em uma rolagem de acerto para te atingir. Cada classe possui uma forma de 
             determinar a classe de armadura.
         <br>
@@ -207,5 +224,6 @@
         <p>Curso de HTML e CSS</p>
         <p>Brasil</p>
     </footer>
+
 </body>
 </html>
