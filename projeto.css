@@ -188,6 +188,65 @@ footer {
 
 /*relacionado ao raças-main fim*/
 
+.regras-main {
+    padding: 20px;
+    margin: 5%;
+}
+
+.regras-main section {
+    margin-bottom: 20px;
+    width: 90%;
+    background-color: #f5deb3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.regras-main section p {
+    text-align: justify;
+}
+
+.regras-main h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#buscador {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#buscador button {
+    padding: 5px 10px;
+    background-color: #6d4c17;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    background-color: #f0e6d2;
+}
+
+th {
+    background-color: #f0e6d2;
+}
+
+/*Relacionado ao ficha-main inicio*/
 .ficha-main {
     display: flex;
     flex-direction: column;
@@ -198,7 +257,7 @@ footer {
 /* Estilização para a seção da ficha do personagem */
 #ficha_personagem {
     width: 100%;
-    max-width: 800px; /* Largura máxima da seção */
+    max-width: 800px;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -213,21 +272,21 @@ footer {
 }
 
 .imagem-ficha {
-    width: 300px; /* Defina o tamanho desejado */
-    height: 300px; /* Defina a altura desejada */
-    border: 1px solid #ccc; /* Adicione uma borda opcional */
-    cursor: pointer; /* Altera o cursor ao passar por cima para indicar clicabilidade */
+    width: 300px; 
+    height: 300px;
+    border: 1px solid #ccc;
+    cursor: pointer; 
 }
 
 .botao-selecao {
     display: block;
-    width: 300px; /* Mesmo tamanho da imagem */
-    height: 300px; /* Mesmo tamanho da imagem */
+    width: 300px; 
+    height: 300px; 
     text-align: center;
-    line-height: 200px; /* Centraliza o texto verticalmente */
-    background-color: #fff; /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda opcional */
-    cursor: pointer; /* Altera o cursor ao passar por cima para indicar clicabilidade */
+    line-height: 200px; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    cursor: pointer; 
 }
 input[type="file"] {
     display: none;
@@ -255,31 +314,30 @@ input[type="file"] {
 .status div {
     margin-bottom: 20px;
 }
-/* Estilos para a div que contém os atributos do personagem */
+
+
 .atributos-do-personagem {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
-    grid-gap: 10px; /* Espaçamento entre as células do grid */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
 }
 
-
-/* Estilos para a div que contém os atributos do personagem */
 .parte-inferior {
     display: grid; 
-    grid-gap: 10px; /* Espaçamento entre as células do grid */
+    grid-gap: 10px; 
 }
 
 button[type="submit"] {
-    padding: 10px 30px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 30px;
+    font-size: 16px; 
     background-color: #6d4c17;
-    color: #fff; /* Cor do texto */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor ao passar por cima */
-    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    color: #fff; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
-/* Estilização para o botão de submit ao passar o mouse */
+
 button[type="submit"]:hover {
-    background-color: #000; /* Cor de fundo ao passar o mouse */
+    background-color: #000; 
 }
