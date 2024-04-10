@@ -1,5 +1,6 @@
 body {
     background-color: #f0e6d2;
+    font-family: 'Cinzel', serif;
 }
 
 /*relacionado ao site-nav inicio*/
@@ -37,11 +38,31 @@ header, .site-nav {
 /*relacionado ao site-nav fim*/
 
 #imagem_floresta {
-    text-align: center;
+    position: relative;
 }
 
 #imagem_floresta img {
     max-width: 100%;
+}
+
+.texto-sobre-imagem h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 75px; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+}
+
+.texto-sobre-imagem p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 25px; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
 }
 
 #info_geral {
@@ -78,6 +99,8 @@ footer {
     color: #333;
     padding: 10px;
     width: 15%;
+    max-height: 300px;
+    overflow-y: auto;
     
 }
 
@@ -96,30 +119,6 @@ footer {
 }
 /*relacionado ao classes-nav fim*/
 
-/*relacionado ao classes-main*/
-.classes-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 220px; 
-    padding: 20px;
-}
-
-.classes-main section {
-    width: calc(49% - 20px);
-    margin-bottom: 20px; 
-    text-align: center;
-    padding: 10px; 
-    background-color: #f5deb3; 
-    border-radius: 10px;
-}
-
-.classes-main section p {
-    padding: 10px; 
-    border-radius: 5px; 
-}
-/*relacionado ao classes-main fim*/
-
 /*relacionado ao raças-nav início*/
 .racas-nav {
     position: fixed;
@@ -129,7 +128,6 @@ footer {
     color: #333;
     padding: 10px;
     width: 15%;
-    
 }
 
 .racas-nav ul li a {
@@ -146,6 +144,56 @@ footer {
     background-color: #e0cba3;
 }
 /*relacionado ao raças-nav fim*/
+
+/*relacionado ao classes-main*/
+.classes-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 220px; 
+    padding: 20px;
+    position: relative;
+}
+
+.classes-main .overlay-image {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+.classes-main section:hover .overlay-image {
+    opacity: 0;
+}
+
+.classes-main section {
+    position: relative;
+    width: calc(49% - 20px);
+    margin-bottom: 20px; 
+    text-align: center;
+    padding: 10px; 
+    background-color: #f5deb3; 
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+
+.conteudo-classe:hover{
+    opacity: 1;
+}
+
+.conteudo-classe{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.classes-main section p {
+    padding: 10px; 
+    border-radius: 5px; 
+}
+/*relacionado ao classes-main fim*/
 
 /*relacionado ao raças-main inicio*/
 
