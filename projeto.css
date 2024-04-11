@@ -247,12 +247,12 @@ footer {
 
 .regras-main {
     padding: 20px;
-    margin: 5%;
+    margin-left: 5%;
 }
 
 .regras-main section {
     margin-bottom: 20px;
-    width: 90%;
+    width: 95%;
     background-color: #f5deb3;
     padding: 10px;
     border-radius: 10px;
@@ -317,7 +317,7 @@ th {
     max-width: 800px;
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -377,6 +377,13 @@ input[type="file"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 10px; 
+}
+
+.atributos-do-personagem label {
+    display: inline-block;
+    width: 100px; /* Defina a largura desejada para as etiquetas */
+    text-align: right; /* Alinhe o texto à direita para manter consistência */
+    margin-right: 10px; /* Adicione um espaço à direita para separar as etiquetas dos campos de entrada */
 }
 
 .parte-inferior {

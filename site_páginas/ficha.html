@@ -33,11 +33,11 @@
                         <input type="file" id="inputImagem" onchange="exibirImagemSelecionada(event)" accept="image/*">
                     </div>
                     <div class="cabeçalho">
-                        <label for="nome">Nome:</label>
+                        <label for="nome"><strong>Nome:</strong></label>
                         <input type="text" id="nome" name="nome" required>
-                        <label for="idade">Idade:</label>
+                        <label for="idade"><strong>Idade:</strong></label>
                         <input type="number" id="idade" name="idade" min="1" required>
-                        <label for="raca">Raça:</label>
+                        <label for="raca"><strong>Raça:</strong></label>
                         
                         <select name="raca" id="raca" required>
                             <option value="">Selecione a raça</option>
@@ -51,7 +51,7 @@
                             <option value="orc_da_planície">Orc da planície</option>
                             <option value="orc_de_sangue">Orc de sangue</option>
                         </select>
-                        <label for="classe">Classe:</label>
+                        <label for="classe"><strong>Classe:</strong></label>
                         <select name="classe" id="classe" required>
                             <option value="">Selecione a classe</option>
                             <option value="barbaro">Bárbaro</option>
@@ -69,15 +69,15 @@
                     </div>
                     <div class="status">
                         <div>
-                        <label for="vida">HP:</label>
+                        <label for="vida">❤️<strong>HP:</strong></label>
                         <input type="number" id="vida" name="vida" required>
                         </div>
                         <div>
-                        <label for="energia">MP:</label>
+                        <label for="energia">⚡<strong>MP:</strong></label>
                         <input type="number" id="energia" name="energia" required>
                         </div>
                         <div>
-                        <label for="classe de armadura">CA:</label>
+                        <label for="classe de armadura">🛡️<strong>CA:</strong></label>
                         <input type="number" id="classe de armadura" name="classe de armadura" required>
                         </div>
                     </div>
@@ -85,44 +85,45 @@
                 <br>
                 <div class="atributos-do-personagem">
                     <div>
-                        <label for="forca">Força:</label>
+                        <label for="forca"><strong>🏋️‍♂️FOR:</strong></label>
                         <input type="number" id="forca" name="forca" min="-10" max="10" required>
                     </div>
                     <div>
-                        <label for="destreza">Destreza:</label>
+                        <label for="destreza"><strong>🤸DES:</strong></label>
                         <input type="number" id="destreza" name="destreza" min="-10" max="10" required>
                     </div>
                     <div>
-                        <label for="constituicao">Constituição:</label>
+                        <label for="constituicao"><strong>💪CON:</strong></label>
                         <input type="number" id="constituicao" name="constituicao" min="-10" max="10" required>
                     </div>
                     <div>
-                        <label for="inteligencia">Inteligência:</label>
+                        <label for="inteligencia"><strong>🧠INT:</strong></label>
                         <input type="number" id="inteligencia" name="inteligencia" min="-10" max="10" required>
                     </div>
                     <div>
-                        <label for="sabedoria">Sabedoria:</label>
+                        <label for="sabedoria"><strong>🦉SAB:</strong></label>
                         <input type="number" id="sabedoria" name="sabedoria" min="-10" max="10" required>
                     </div>
                     <div>    
-                        <label for="carisma">Carisma:</label>
+                        <label for="carisma"><strong>😎CAR:</strong></label>
                         <input type="number" id="carisma" name="carisma" min="-10" max="10" required>
                     </div>
+                    
                 </div>
                 <br>
                 <div class="parte-inferior">
                     <div>
-                    <label for="inventário">Inventário:</label>
+                    <label for="inventário">🎒Inventário:</label>
                     <textarea id="inventário" name="inventário" rows="10" cols="100" placeholder="Preencha com seus itens..."></textarea>
                     </div>
                     <br>
                     <div>
-                    <label for="habilidades">Habilidades:</label>
+                    <label for="habilidades">🧙Habilidades:</label>
                     <textarea id="habilidades" name="habilidades" rows="10" cols="100" placeholder="Descreva as habilidades do seu personagem aqui..."></textarea>
                     </div>
                     <br>
                     <div>
-                    <label for="historia">História do Personagem:</label>
+                    <label for="historia">📜História do Personagem:</label>
                     <textarea id="historia" name="historia" rows="10" cols="100" placeholder="Descreva o passado do seu personagem..."></textarea> </textarea>
                     </div>
                 </div>
