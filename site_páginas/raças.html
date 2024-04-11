@@ -30,11 +30,10 @@
             </ul>
         </nav>
     </aside>
-
+    <div class="titulo-classe-raça">
+        <h1>Raças</h1> 
+    </div>
     <main class="racas-main">
-        <!-- aqui ficarão sessões para cada classe, puramente informativo, sem interação,
-        devo adicionar mais raças e coloca-las em ordem alfabética, possivelmente adicionar imagens-->
-
         <section id="anao" class="raca_section">
             <h2>Anão</h2>
             <p class="descricao_raca"> 
@@ -240,5 +239,26 @@
         <p>Curso de HTML e CSS</p>
         <p>Brasil</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.racas-nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); 
+    
+                const targetId = this.getAttribute('href'); 
+                const targetElement = document.querySelector(targetId); 
+    
+                if (targetElement) {
+                    const offset = 80; 
+                    const targetPosition = targetElement.offsetTop - offset; 
+    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth' 
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

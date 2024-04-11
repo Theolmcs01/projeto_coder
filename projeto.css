@@ -90,6 +90,12 @@ footer {
     text-align: center;
 }
 
+.titulo-classe-raça {
+    text-align: center;
+    margin-left: 220px;
+    font-size: 40px;
+    color: #6d4c17;
+}
 /*relacionado ao classes-nav início*/
 .classes-nav {
     position: fixed;
@@ -226,6 +232,9 @@ footer {
 .descricao_sub-raca2 {
     flex: 1;
     max-width: 45%;
+    background-color: #f0e6d2; /* Cor de fundo desejada */
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #orc ol {
