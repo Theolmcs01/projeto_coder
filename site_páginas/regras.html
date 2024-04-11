@@ -247,5 +247,29 @@
         <p>Brasil</p>
     </footer>
 
+    <script>
+        function search() {
+            var input = document.getElementById('search-input').value.trim().toLowerCase();
+            if (input === '') {
+                var highlightedElements = document.querySelectorAll('.regras-main section p .highlight');
+                highlightedElements.forEach(function(element) {
+                    element.outerHTML = element.innerHTML;
+                });
+                return;
+            }
+            var highlightedElements = document.querySelectorAll('.regras-main section p .highlight');
+            highlightedElements.forEach(function(element) {
+                element.outerHTML = element.innerHTML;
+            });
+            var elements = document.querySelectorAll('.regras-main section p');
+            elements.forEach(function(element) {
+                var content = element.innerHTML.toLowerCase();
+                var highlightedContent = content.replace(new RegExp(input, 'g'), '<span class="highlight">' + input + '</span>');
+                element.innerHTML = highlightedContent;
+            });
+        }
+    </script>
+    
+
 </body>
 </html>

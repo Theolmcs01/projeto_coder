@@ -286,6 +286,10 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
 
 table {
     width: 50%;
@@ -392,7 +396,7 @@ input[type="file"] {
     grid-gap: 10px; 
 }
 
-button[type="submit"] {
+#baixarFichaBtn {
     padding: 10px 30px;
     font-size: 16px; 
     background-color: #6d4c17;
@@ -402,7 +406,6 @@ button[type="submit"] {
     transition: background-color 0.3s ease; 
 }
 
-
-button[type="submit"]:hover {
-    background-color: #000; 
+#baixarFichaBtn:hover {
+    background-color: #c48013;
 }
