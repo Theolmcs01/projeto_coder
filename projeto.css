@@ -37,6 +37,14 @@ header, .site-nav {
 }
 /*relacionado ao site-nav fim*/
 
+footer {
+    background-color: #6d4c17;
+    color: #f0e6d2;
+    padding: 10px;
+    text-align: center;
+}
+
+/*relacionado ao index-main inicio*/
 #imagem_floresta {
     position: relative;
 }
@@ -83,19 +91,8 @@ header, .site-nav {
     box-sizing: border-box;
 }
 
-footer {
-    background-color: #6d4c17;
-    color: #f0e6d2;
-    padding: 10px;
-    text-align: center;
-}
+/*relacionado ao index-main fim*/
 
-.titulo-classe-raça {
-    text-align: center;
-    margin-left: 220px;
-    font-size: 40px;
-    color: #6d4c17;
-}
 /*relacionado ao classes-nav início*/
 .classes-nav {
     position: fixed;
@@ -151,6 +148,13 @@ footer {
 }
 /*relacionado ao raças-nav fim*/
 
+.titulo-classe-raça {
+    text-align: center;
+    margin-left: 220px;
+    font-size: 40px;
+    color: #6d4c17;
+}
+
 /*relacionado ao classes-main*/
 .classes-main {
     display: flex;
@@ -175,7 +179,7 @@ footer {
 
 .classes-main section {
     position: relative;
-    width: calc(49% - 20px);
+    width: 46%;
     margin-bottom: 20px; 
     text-align: center;
     padding: 10px; 
@@ -184,7 +188,6 @@ footer {
     max-height: 400px;
     overflow-y: auto;
 }
-
 
 .conteudo-classe:hover{
     opacity: 1;
@@ -232,7 +235,7 @@ footer {
 .descricao_sub-raca2 {
     flex: 1;
     max-width: 45%;
-    background-color: #f0e6d2; /* Cor de fundo desejada */
+    background-color: #f0e6d2;
     padding: 10px;
     border-radius: 20px;
 }
@@ -245,6 +248,7 @@ footer {
 
 /*relacionado ao raças-main fim*/
 
+/*relacionado ao regras-main inicio*/
 .regras-main {
     padding: 20px;
     margin-left: 5%;
@@ -306,6 +310,7 @@ th, td {
 th {
     background-color: #f0e6d2;
 }
+/*relacionado ao regras-main fim*/
 
 /*Relacionado ao ficha-main inicio*/
 .ficha-main {
@@ -315,7 +320,6 @@ th {
     padding: 20px;
 }
 
-/* Estilização para a seção da ficha do personagem */
 #ficha_personagem {
     width: 100%;
     max-width: 800px;
@@ -377,7 +381,6 @@ input[type="file"] {
     margin-bottom: 20px;
 }
 
-
 .atributos-do-personagem {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -386,15 +389,16 @@ input[type="file"] {
 
 .atributos-do-personagem label {
     display: inline-block;
-    width: 100px; /* Defina a largura desejada para as etiquetas */
-    text-align: right; /* Alinhe o texto à direita para manter consistência */
-    margin-right: 10px; /* Adicione um espaço à direita para separar as etiquetas dos campos de entrada */
+    width: 100px; 
+    text-align: right; 
+    margin-right: 10px; 
 }
 
 .parte-inferior {
     display: grid; 
     grid-gap: 10px; 
 }
+/*relacionado ao fichas-main fim*/
 
 #baixarFichaBtn {
     padding: 10px 30px;
